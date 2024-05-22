@@ -1,0 +1,88 @@
+body {
+    background-color: #F7ECDE;
+    ::selection {
+        background-color: #FEC260;
+    }
+}
+
+h1{
+    font-family: "Pacifico";
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: #352e28;
+    position: relative;
+    z-index: 999;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 10px;
+    right: 10px;
+    bottom: 20px;
+    background-color: #FEC260;
+    z-index: -999;
+    transition: all 0.5s;
+}
+h1:hover::after {
+    top: 35%;
+}
+
+.form-section {
+    border-style: dotted none dotted none;
+}
+
+.container h2 {
+    font-family: "Righteous";
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    background-image: linear-gradient(to right, #3ca55c, #c8bd44);
+    background-clip: text;
+    color: transparent;
+}
+
+.form-control:focus{
+    border-color: #d99c39;
+    box-shadow: 0 0 0 4px #fec26055;
+}
+
+label {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212529;
+}
+
+.dots{
+    width: 80px;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+}
+
+.modal-dialog {
+    text-align: left;
+}
+
+.modal-body p {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 27px;
+    color: #352e28;
+}
+
+.modal-body ol li {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #212529;
+}
+.modal-body ol li i {
+    color: #BB4120;
+}
